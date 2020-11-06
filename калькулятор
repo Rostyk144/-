@@ -1,0 +1,33 @@
+# first number
+print("Введіть перше число:")
+input_number1 = input()
+
+number1 = float(input_number1)
+
+# second number
+print("Введіть друге число: ")
+input_number2 = input()
+
+number2 = float(input_number2)
+# operation
+print("Введіть операцію (+,-,*,/):")
+operation = input()
+
+if operation == "+":
+    result = number1 + number2
+    print(input_number1 + " " + operation + " " + input_number2 + " = " + str(result))
+elif operation == "-":
+    result = number1 - number2
+    print(input_number1 + " " + operation + " " + input_number2 + " = " + str(result))
+elif operation == "*":
+    result = number1 * number2
+    print(input_number1 + " " + operation + " " + input_number2 + " = " + str(result))
+elif operation == "/":
+    # todo: Перевірити чи number2 не дорівнює 0
+    if number2 == 0:
+        print("Ділити на 0 не можна")
+    else:
+        result = number1 / number2
+        print(input_number1 + " " + operation + " " + input_number2 + " = " + str(result))
+else:
+    print("Невідома операція")
